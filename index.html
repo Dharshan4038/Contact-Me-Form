@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>Contact-Me form</title>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+        <h1 id="title">Contact Me</h1>
+        <p id="description">Contact me today and get reply within 24 hours</p>
+        <form id="survey-form">
+            <fieldset id="f1">
+                <label id="name-label" class="inline1">Enter your name:
+                    <input type="text" id="name" placeholder="Enter your name" class="in1" required>
+                </label>
+                <label id="email-label" class="inline1">Enter your email:
+                    <input type="email" id="email" placeholder="Enter your email" class="in1" required>
+                </label>
+                <label id="number-label" class="inline1">Enter your age (years):
+                    <input type="number" id="number" min="17" max="100" placeholder="Age" class="in1" required>
+                </label>
+            </fieldset>
+            <fieldset id="f2">
+                <label class="inline2">Which option best describes your current role?
+                    <select id="dropdown">
+                        <option>Select One</option>
+                        <option>Student</option>
+                        <option>Full time job</option>
+                        <option>Full time learner</option>
+                        <option>others</option>
+                    </select>
+                </label>
+                <label class="inline2">Would you recommend my portfolio to a friend?</label>
+                    <label><input type="radio" name="feedback" class="inline" > Definitely </label><br>     
+                    <label><input type="radio" name="feedback" class="inline"> May be</label> <br>
+                    <label><input type="radio" name="feedback" class="inline"> not sure</label>
+            </fieldset>
+            <fieldset id="f3">
+                <label class="inline2">What would you like to see improved? (Check all that apply)</label><br>
+                   <label><input type="checkbox" value="1" class="in3"> Front-end Projects</label> <br>
+                    <label><input type="checkbox" value="2" class="in3"> Back-end Projects</label>
+                <label class="inline2"> Add a bio:
+                    <textarea name="bio" rows="3" cols="30" placeholder="I like coding..."></textarea>
+			    </label>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit"/> 
+        </form>
+  </body>
+</html>
